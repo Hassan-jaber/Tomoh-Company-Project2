@@ -272,3 +272,19 @@ jQuery(function ($) {
 
 });
 // ========================================== Count Up ======================================================
+
+// --------------------------------------- Change language --------------------------
+let select = document.querySelectorAll("select");
+
+select.forEach((Option) => {
+	
+  Option.addEventListener("change", (e) => {
+    if (e.currentTarget.value === "En") {
+      window.open("index.html", "_self");
+    } else {
+      window.open("index-rtl.html", "_self");
+    }
+  });
+});
+
+
