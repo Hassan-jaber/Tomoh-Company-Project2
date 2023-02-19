@@ -279,10 +279,10 @@ let select = document.querySelectorAll("select");
 select.forEach((Option) => {
 	
   Option.addEventListener("change", (e) => {
-    if (e.currentTarget.value === "En") {
+    if (e.currentTarget.value === "Ar") {
       window.open("index.html", "_self");
     } else {
-      window.open("index-rtl.html", "_self");
+      window.open("index-ltr.html", "_self");
     }
   });
 });
